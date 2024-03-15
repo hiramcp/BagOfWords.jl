@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "julia",
+            "request": "launch",
+            "name": "Run active Julia file",
+            "program": "${file}",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "juliaEnv": "${command:activeJuliaEnvironment}",
+            "args": ["test1", 
+                    "gender", 
+                    "C:\\HCP\\Personal\\Doctorado\\7o Semestre\\Data\\comp2023\\IberLEF2023_PoliticEs_gender_Es_train.json.gz", 
+                    "C:\\HCP\\Personal\\Doctorado\\7o Semestre\\Data\\comp2023\\IberLEF2023_PoliticEs_gender_Es_test.json.gz", 
+                    "klass"]
+        }
+    ]
+}
